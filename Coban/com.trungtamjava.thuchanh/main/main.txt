@@ -1,0 +1,32 @@
+package com.trungtamjava.thuchanh;
+import java.util.Scanner;
+
+import com.trungtamjava.doituong.NhanVien;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);    
+		System.out.println("Vui long nhap vao gia tri: ");
+		
+		NhanVien[] nhanViens = new NhanVien[1]; 
+			 
+			for (int i = 0; i< nhanViens.length;i++) {
+				String ten = sc.nextLine();
+				String diaChi = sc.nextLine();
+				int tuoi = sc.nextInt();
+				
+				nhanViens[i] = new NhanVien(ten, diaChi, tuoi);
+				//xóa bộ nhớ đệm của bàn phím
+			}
+			for (NhanVien nv : nhanViens) {
+				System.out.println(nv.getTen() + " " + nv.getDiaChi() + " " + nv.getTuoi());
+			}
+
+	}
+	
+}
+
+

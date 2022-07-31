@@ -1,0 +1,36 @@
+package DinhDang;
+
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
+import java.util.Locale;
+import java.math.RoundingMode;
+
+
+public class DinhDangTienTe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Double k = 12345678.54;
+      
+      Locale locale = new Locale("vi", "VN");
+      NumberFormat format = NumberFormat.getCurrencyInstance(locale);
+      
+      format.setRoundingMode(RoundingMode.HALF_UP);
+      
+      System.out.println(format.format(k));
+      
+      DecimalFormat format2 = (DecimalFormat) DecimalFormat.getCurrencyInstance(locale);
+      
+      DecimalFormatSymbols formatSymbols = new DecimalFormatSymbols();
+      
+      formatSymbols.setGroupingSeparator('-');
+      formatSymbols.setCurrencySymbol("vnd");
+      
+      format2.setDecimalFormatSymbols(formatSymbols);
+      
+      
+      System.out.println(format2.format(k));
+	}
+
+}

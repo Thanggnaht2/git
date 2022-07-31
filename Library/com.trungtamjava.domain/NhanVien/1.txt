@@ -1,0 +1,22 @@
+package com.trungtamjava.domain;
+
+public class NhanVien extends person {
+	String ten;
+	double luong;
+
+public void mucLuong() {
+	System.out.println("muc luong");
+}
+/////////////////////////////////////////////////////////////
+public void thongTin() {
+	this.ten = "B";
+	System.out.println("ten cua class con la " +this.ten);
+	super.thongTin();
+	
+	super.ten = "B";
+	this.ten = "C";
+	
+	
+}
+	
+}

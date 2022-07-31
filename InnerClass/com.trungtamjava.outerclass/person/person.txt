@@ -1,0 +1,5 @@
+package com.trungtamjava.outerclass;
+
+public class Person {
+
+}

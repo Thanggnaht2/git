@@ -1,0 +1,23 @@
+package main;
+import model.student;
+public class StudentMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		student st = new student();
+		 st.setName("A");
+		 st.setTuoi(12);
+		 
+		 st.setClassz("ABC");
+		 
+		 System.out.println(st.getName() + "  " + st.getTuoi() + "  " + st.getClassz());
+		 
+		 st.input();
+		 st.info();
+		 
+		
+		
+
+	}
+
+}

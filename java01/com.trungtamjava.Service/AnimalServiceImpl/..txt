@@ -1,0 +1,17 @@
+package Service;
+
+public class AnimalServiceImp implements AnimalService{
+	@Override
+	public void them() {
+		System.out.println("them");
+	}
+	@Override
+	public void sua() {
+		System.out.println("them");
+	}
+	@Override
+	public void xoa() {
+		System.out.println("them");
+	}
+
+}

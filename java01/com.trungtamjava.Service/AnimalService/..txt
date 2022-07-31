@@ -1,0 +1,13 @@
+package Service;
+
+public interface AnimalService {
+	public static int HANG_SO = 10;
+  public abstract void them();
+  
+  public void sua();//ngaàm định là public abstract
+  
+  void xoa();//ngầm định là public abstract
+  
+	
+	
+}

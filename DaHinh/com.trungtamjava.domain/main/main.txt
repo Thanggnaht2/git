@@ -1,0 +1,24 @@
+package com.trungtamjava.domain;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Person p = new Person();
+	if(p instanceof Worker) {
+		((Worker)p).luong();
+	}else {
+		System.out.println("Person");
+	}
+	
+        Person p1 = new Worker();
+    if(p1 instanceof Worker) {
+    	System.out.println("Worker");
+    }
+    if(p1 instanceof Employee) {
+    	System.out.println("Employee");
+    }
+				
+	}
+}

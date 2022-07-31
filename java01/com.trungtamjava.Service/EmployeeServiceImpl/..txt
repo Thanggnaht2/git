@@ -1,0 +1,29 @@
+package Service;
+import java.util.Scanner;
+
+public class EmployeeServiceImp implements EmployeeService , AnimalService {
+
+	@Override
+	public void luong() {
+		System.out.println("luong");
+	}
+
+	@Override
+	public void them() {
+	
+	}
+
+	@Override
+	public void sua() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void xoa() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

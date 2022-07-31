@@ -1,0 +1,24 @@
+package com.trungtamjava.domain;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+NhanVien nhanvien = new NhanVien();
+  nhanvien.ten = "A";
+  nhanvien.diaChi = "HaNoi";
+  nhanvien.luong = 3.1;
+  
+  // h�m
+  nhanvien.setTen("B");
+  nhanvien.setDiaChi("ThaiBinh");
+  
+  nhanvien.mucLuong();
+  
+/////////////////////////////////////////////
+  NhanVien nv = new NhanVien();
+  nv.thongTin();
+  
+	}
+
+}

@@ -1,0 +1,34 @@
+ package com.trungtamjava.thuchanh;
+import java.util.Scanner;
+public class PhuongTrinhBac2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hay nhap vao 3 gia tri a,b,c");
+		Scanner sc = new Scanner(System.in);
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		double c = sc.nextDouble();
+ if (a == 0) {
+	System.out.println("Phuong trinh co nghiem la " +(-c/b));
+	}
+ else {
+	 double delta = b*b-4*a*c;
+	 if(delta == 0) {
+		 System.out.println("Phuong trinh co nghiem la" +(-b/2*a));
+	 }
+	 else if(delta < 0){
+		 System.out.println("Phuong trinh vo nghiem");
+	 }
+	 else {
+		 System.out.println("Phuong trinh co 2 nghiem kep");
+		 double x1 = -(b*b-Math.sqrt(delta))/2*a;
+		 double x2 = -(b*b+Math.sqrt(delta))/2*a;
+	System.out.println("x1 = " +x1);
+	System.out.println("x2 = " +x2);
+	 }
+ }
+ 
+	}
+
+}

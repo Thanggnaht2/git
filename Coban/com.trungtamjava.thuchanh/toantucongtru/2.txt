@@ -1,0 +1,26 @@
+package com.trungtamjava.thuchanh;
+
+public class ToanTuCongTru {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i = 0;
+		i++;
+		inKQ(i);
+		++i;
+		inKQ(i);
+		//phép thử
+		i = 0;
+		i++;//cộng rồi mới gán
+		inKQ(i);
+		i=0;
+		++i;//gán trước cộng sau
+		inKQ(i);
+		
+		
+	}
+	public static void inKQ(int i) {
+		System.out.println(i);
+	}
+
+}

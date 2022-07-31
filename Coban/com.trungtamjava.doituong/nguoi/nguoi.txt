@@ -1,0 +1,21 @@
+package com.trungtamjava.doituong;
+
+public class Nguoi {
+	String Ten;
+	String Diachi;
+	int Tuoi;
+public void dilai(String Ten) {
+	System.out.println(Ten + " di lai");
+}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+new Nguoi();//đối tương
+Nguoi AN = new Nguoi();//đối tượng 2
+Nguoi Binh = new Nguoi();//đối tương 3
+   AN.dilai("An");
+   Binh.dilai("Binh");
+
+	}
+
+}

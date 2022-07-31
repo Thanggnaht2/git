@@ -1,0 +1,11 @@
+package com.trungtamjava.dto;
+
+public class Employee extends Person{// Is - a , mỗi 1 nhân viên is-a  người
+    public Employee() {
+    	super("A");
+    }
+    
+    public Employee(String ten) {
+    	super(ten);
+    }
+}

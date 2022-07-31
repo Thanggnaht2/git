@@ -1,0 +1,56 @@
+package com.trungtamjava.doituong;
+
+public class Book {
+	String ten;
+	String mota;
+	double price;
+	 
+	Book(){
+		
+	}
+	
+	public Book(String ten, String mota){
+		this.ten = ten;
+		this.mota = mota;
+	}
+	
+	public Book(double price) {
+		this.price = price;
+	}
+	
+	public Book(String ten, String mota, double price) {
+		this.ten = ten;
+		this.mota = mota;
+		this.price = price;
+	}
+	
+	
+	// các constructor(nó khởi tạo các giá trị để cung cấp dữ liệu cho đối tượng)
+
+	public String getTen() {
+		return ten;
+	}
+
+	public void setTen(String ten) {
+		this.ten = ten;
+	}
+
+	public String getMota() {
+		return mota;
+	}
+
+	public void setMota(String mota) {
+		this.mota = mota;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+
+
+}

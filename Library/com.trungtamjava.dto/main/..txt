@@ -1,0 +1,16 @@
+package com.trungtamjava.dto;
+
+public class Main {
+ public static void main(String[] args) {
+	Employee emp = new Employee();
+	emp.setTen("A");
+	emp.setDiaChi(null);
+	
+	DiaChi diaChi = new DiaChi();
+	diaChi.setTenDuong("HaNoi");
+	
+	emp.setDiaChi(diaChi);
+	System.out.println(emp.getTen() + " " + emp.getDiaChi().getTenDuong());
+}
+ 
+}

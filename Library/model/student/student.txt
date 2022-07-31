@@ -1,0 +1,32 @@
+package model;
+
+import java.util.Scanner;
+
+public class student extends Person {
+
+	 private String classz;
+
+	public String getClassz() {
+		return this.classz;
+	}
+
+	public void setClassz(String c) {
+		classz = c;
+	}
+	@Override
+	public void info() {
+		// TODO Auto-generated method stub
+		super.info();
+		System.out.println(this.classz);
+	}
+	@Override
+	public void input() {
+		// TODO Auto-generated method stub
+		super.input();
+		System.out.println("Hay nhap lop ");
+		this.classz = new Scanner(System.in).nextLine();
+	}
+	 
+	
+	 
+}

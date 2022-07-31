@@ -1,0 +1,45 @@
+package com.trungtamjava.string;
+
+public class StringMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = "Hello JMaster ";
+		System.out.println(s1.length());
+		System.out.println(s1.trim().length());  // xóa các khoảng trống ở đầu và cuối chuỗi
+		
+		String s2 = s1.substring(2);
+		String s3 = s1.substring(2,5);//trả về chuỗi con được cắt từ chuỗi
+		System.out.println(s2);
+		System.out.println(s3);
+		if (s2.equals(s3)) {
+			System.out.println("bang nhau");
+		}else {
+			System.out.println("khong bang nhau");
+			
+		}
+		
+		char c = s1.charAt(0);//in ra vị trí phần tử trong chuỗi
+		  System.out.println(c);
+		
+		int count=0;
+		
+		for(int i=0;i<s1.length();i++) {
+			  if(s1.charAt(i)=='t') {
+				  count++;
+			  }
+		}
+		System.out.println(count);
+		
+		int index = s1.indexOf(s2);
+		   System.out.println(index);//in ra nơi kỹ tự được xuất hiện đầu tiên trong chuỗi cha
+		int lastindex = s1.lastIndexOf(s2);
+		   System.out.println(lastindex);//in ra nơi kỹ tự cuối cùng trong chuỗi cha
+		    
+		if (s1.contains(s2)) {
+			System.out.println("co s2");
+		}
+
+	}
+
+}

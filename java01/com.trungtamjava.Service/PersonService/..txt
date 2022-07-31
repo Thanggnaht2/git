@@ -1,0 +1,5 @@
+package Service;
+
+public interface PersonService {
+         void luong();
+}

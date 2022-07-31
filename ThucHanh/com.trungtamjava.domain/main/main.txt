@@ -1,0 +1,30 @@
+package com.trungtamjava.domain;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		NhanVien[] nvs = new NhanVien[3];
+		
+		System.out.println("Vui long nhap thong tin");
+		for (int i = 0; i < nvs.length; i++) {
+			String ten = sc.nextLine();
+			String tenDuong = sc.nextLine();
+			int soNamKN = sc.nextInt();
+			
+			Address add = new Address(tenDuong);
+			NhanVien emp = new NhanVien(ten,soNamKN);
+			emp.setAddress(add);
+			
+			nvs[i] = emp;
+			
+			sc.nextLine();
+	}
+   System.out.println("thong tin cua ba nhan vien la ");
+   for (NhanVien emp : nvs) {
+	   System.out.println("Ten: " + emp.getTen() + "Dia chi: " + emp.getAddress().getTenDuong() + "Luong: " +   emp.luong());
+   }
+}
+}

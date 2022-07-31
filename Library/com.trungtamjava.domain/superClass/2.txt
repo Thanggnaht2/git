@@ -1,0 +1,23 @@
+package com.trungtamjava.domain;
+
+public class superClass {
+	public int tong2So(int a, int b) {
+		return a + b;
+	}
+	public long tong2So(int a, long b) {
+		return a + b;
+	}
+	public float tong2So(float a, float b) {
+		return a + b;
+	}
+	public int tong2So(int a) {
+		return a + 10;
+	}
+	public static void main(String[] args) {
+		superClass sup = new superClass();
+		sup.tong2So(5);
+		
+		System.out.println("Tong 2 so la " +sup.tong2So(5));
+	}
+
+}

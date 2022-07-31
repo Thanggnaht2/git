@@ -1,0 +1,5 @@
+package com.trungtamjava.domain;
+
+public class Person {
+
+}

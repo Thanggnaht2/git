@@ -1,0 +1,10 @@
+package com.trungtamjava.domain;
+
+public class Worker extends Employee{
+ 
+	private double luong;
+	
+	public void luong() {
+		System.out.println("Hello");
+	}
+}

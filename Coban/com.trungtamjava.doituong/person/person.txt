@@ -1,0 +1,21 @@
+package com.trungtamjava.doituong;
+
+public class Person {
+	String ten;
+	int tuoi;
+	public void setTen(String ten) {
+		this.ten = ten;//"this" trỏ đến ten và hàm này có tác dụng khi chúng ta truyền tên đến thì nó chỉ truyền dến biến " tên "thôi
+	}
+	public String getTen() {
+		return ten;
+	}
+	public void setTuoi(int tuoi) {
+		this.tuoi = tuoi;
+	}
+	public int getTuoi() {
+		return tuoi;
+	}
+	public void anUong() {
+		System.out.println("an uong");//đây cũng là 1 hàm insstanc2
+	} 
+}

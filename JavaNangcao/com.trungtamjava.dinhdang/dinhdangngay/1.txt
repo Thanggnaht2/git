@@ -1,0 +1,21 @@
+package DinhDang;
+
+import java.util.Date;
+import java.util.Locale;
+import java.text.SimpleDateFormat;
+
+public class DinhDangNgay {
+
+	public static void main(String[] args) {
+		String pattern1 = "dd/MM/yyyy";
+		
+		String pattern2 = "dd-MM-yyyy HH:mm:ss";
+		
+		String pattern3 = "EEEE MMMM yyyy HH:mm:ss a";
+	  SimpleDateFormat dateFormat = new SimpleDateFormat(pattern3, new Locale("vi", "VN"));
+	  
+	System.out.println(dateFormat.format(new Date()));
+
+	}
+
+}
